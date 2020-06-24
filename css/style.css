@@ -1,7 +1,10 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
+  color: #4a4a4a;
   overflow-x: hidden; }
   body ul,
   body h1,
@@ -29,14 +32,6 @@ header {
     display: block;
     margin: 10px auto; }
 
-@media only screen and (max-width: 991px) {
-  header .navbar-light {
-    font-size: 14px; }
-  header img {
-    max-width: 145px; } }
-@media only screen and (max-width: 575px) {
-  header .col-sm-6 {
-    max-width: 50%; } }
 main #carousel-banner {
   margin-top: 25px; }
   main #carousel-banner .carousel-first {
@@ -75,6 +70,186 @@ main #fast-services {
     main #fast-services ul li {
       display: inline-block;
       width: 33%;
-      text-align: center; }
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+      font-weight: 500; }
+      main #fast-services ul li i {
+        color: #ffcb2e; }
+main #short-info img {
+  width: 100%; }
+main #short-info h1 {
+  font-family: "Merienda One", cursive;
+  font-size: 18px;
+  margin: 50px 0 30px 0;
+  line-height: 1.4; }
+  main #short-info h1 .highlight {
+    color: #ffcb2e; }
+main #short-info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin-bottom: 45px; }
+main #short-info a {
+  color: #fff;
+  background: #ffcb2e;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif; }
+main #short-ad {
+  text-align: center;
+  color: #fff;
+  margin: 50px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Merienda One", cursive; }
+  main #short-ad .container {
+    background: url("../assets/short-adad.jpg") no-repeat;
+    background-size: cover;
+    padding: 40px 0; }
+main #our-products button {
+  outline: none;
+  border: none;
+  background: transparent; }
+main #our-products p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px; }
+main #our-products h1 {
+  margin-bottom: 50px;
+  font-family: "Merienda One", cursive;
+  position: relative;
+  font-size: 18px;
+  text-align: center; }
+  main #our-products h1 .circle {
+    position: absolute;
+    padding: 3.5px;
+    background: #ffcb2e;
+    border-radius: 50%;
+    top: 7px; }
+  main #our-products h1 .line {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #ffcb2e;
+    top: 9px; }
+  main #our-products h1 .icon-left .circle {
+    left: 42%; }
+  main #our-products h1 .icon-left .line {
+    left: 38%; }
+  main #our-products h1 .icon-right .circle {
+    right: 42%; }
+  main #our-products h1 .icon-right .line {
+    right: 38%; }
+main #our-products .product-bg {
+  background: #f4f4f4; }
+  main #our-products .product-bg img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0; }
+main #our-products .product-price {
+  color: #ffcb2e;
+  text-align: right;
+  margin-left: 68px; }
+main #our-products .card-body {
+  padding: 25px 30px 35px 30px; }
+  main #our-products .card-body a {
+    padding: 10px 31%;
+    background: #ffcb2e;
+    color: #fff; }
+main #our-products .explore-product {
+  text-decoration: none;
+  color: #ffcb2e;
+  border: 1px solid #ffcb2e;
+  transition: 0.5s ease-in-out;
+  padding: 10px 35px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto; }
+main #our-products .explore-product:hover {
+  color: #fff;
+  background: #ffcb2e; }
+
+@media only screen and (max-width: 1199px) {
+  main #our-products h1 .icon-left .line {
+    left: 35%; }
+  main #our-products h1 .icon-left .circle {
+    left: 40%; }
+  main #our-products h1 .icon-right .line {
+    right: 35%; }
+  main #our-products h1 .icon-right .circle {
+    right: 40%; } }
+@media only screen and (max-width: 991px) {
+  header .navbar-light {
+    font-size: 14px; }
+  header img {
+    max-width: 145px; }
+
+  main #fast-services ul li {
+    width: 30%; }
+  main #our-products h1 .icon-left .line {
+    left: 30%; }
+  main #our-products h1 .icon-left .circle {
+    left: 37%; }
+  main #our-products h1 .icon-right .line {
+    right: 30%; }
+  main #our-products h1 .icon-right .circle {
+    right: 37%; }
+  main #our-products .product-price {
+    margin-left: 175px; }
+  main #our-products .card-body a {
+    padding: 10px 31%; } }
+@media only screen and (max-width: 767px) {
+  main #fast-services ul li {
+    width: 100%;
+    margin: 5px 0; }
+  main #our-products h1 .icon-left .line {
+    left: 24%; }
+  main #our-products h1 .icon-left .circle {
+    left: 33%; }
+  main #our-products h1 .icon-right .line {
+    right: 24%; }
+  main #our-products h1 .icon-right .circle {
+    right: 33%; }
+  main #our-products .product-price {
+    margin-left: 135px; }
+  main #our-products .card-body a {
+    padding: 10px 41%; } }
+@media only screen and (max-width: 575px) {
+  header .col-sm-6 {
+    max-width: 50%; }
+
+  main #fast-services {
+    padding: 0 35px; }
+  main #our-products .product-price {
+    margin-left: 150px; }
+  main #our-products .product-bg img {
+    height: 250px; }
+  main #our-products .card-body a {
+    padding: 10px 41%; } }
+@media only screen and (max-width: 425px) {
+  main #our-products h1 .icon-left .line {
+    left: 9%; }
+  main #our-products h1 .icon-left .circle {
+    left: 22%; }
+  main #our-products h1 .icon-right .line {
+    right: 9%; }
+  main #our-products h1 .icon-right .circle {
+    right: 22%; }
+  main #our-products .product-price {
+    margin-left: 150px; }
+  main #our-products .card-body a {
+    padding: 10px 37%; } }
+@media only screen and (max-width: 360px) {
+  main #our-products .product-price {
+    margin-left: 150px; }
+  main #our-products .card-body a {
+    padding: 10px 33%; } }
 
 /*# sourceMappingURL=style.css.map */

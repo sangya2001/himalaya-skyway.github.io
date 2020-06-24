@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // color variables
 $primary-color: #ffcb2e;
@@ -10,6 +11,7 @@ $primary-color: #ffcb2e;
 $raleway: "Raleway", sans-serif;
 $pacifico: "Pacifico", cursive;
 $merienda: "Merienda One", cursive;
+$roboto: 'Roboto', sans-serif;
 
 body {
   color: #4a4a4a;
@@ -172,7 +174,18 @@ main {
   // short ad ends
   // our products starts
   #our-products {
+    button{
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+    p{
+      font-family: $roboto;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
     h1 {
+      margin-bottom: 50px;
       font-family: $merienda;
       position: relative;
       font-size: 18px;
@@ -207,6 +220,46 @@ main {
           right: 38%;
         }
       }
+    }
+    .product-bg{
+      background: #f4f4f4;
+      img{
+        height: 150px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+    }
+    .product-price{
+      color: $primary-color;
+      text-align: right;
+      margin-left: 68px;
+    }
+    .card-body{
+      padding: 25px 30px 35px 30px;
+      a{
+        padding: 10px 31%;
+        background: $primary-color;
+        color: #fff;
+      }
+    }
+    .explore-product{
+      text-decoration: none;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      transition: 0.5s ease-in-out;
+      padding: 10px 35px;
+      font-family: $raleway;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: block;
+      margin: 0 auto;
+    }
+    .explore-product:hover{
+      color: #fff;
+      background: $primary-color;
     }
   }
   // our products ends
@@ -280,6 +333,14 @@ main {
           }
         }
       }
+      .product-price{
+        margin-left: 175px;
+      }
+      .card-body{
+        a{
+          padding: 10px 31%;
+        }
+      }
     }
     // our products ends
   }
@@ -319,6 +380,14 @@ main {
           }
         }
       }
+      .product-price{
+        margin-left: 135px;
+      }
+      .card-body{
+        a{
+          padding: 10px 41%;
+        }
+      }
     }
     // our products ends
   }
@@ -342,12 +411,29 @@ main {
       padding: 0 35px;
     }
     //fast services ends
+    // ourprocusts starts
+    #our-products{
+      .product-price{
+        margin-left: 150px;
+      }
+      .product-bg{
+        img{
+          height: 250px;
+        }
+      }
+      .card-body{
+        a{
+          padding: 10px 41%;
+        }
+      }
+    }
+    // our products ends
   }
   // main ends
 }
 // below sm ends
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 425px){
    // main starts
    main {
     // ourprocusts starts
@@ -368,6 +454,33 @@ main {
           .circle{
             right: 22%;
           }
+        }
+      }
+      .product-price{
+        margin-left: 150px;
+      }
+      .card-body{
+        a{
+          padding: 10px 37%;
+        }
+      }
+    }
+    // our products ends
+  }
+  // main ends
+}
+
+@media only screen and (max-width: 360px){
+  // main starts
+  main {
+    // ourprocusts starts
+    #our-products{
+      .product-price{
+        margin-left: 150px;
+      }
+      .card-body{
+        a{
+          padding: 10px 33%;
         }
       }
     }
