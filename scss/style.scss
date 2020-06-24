@@ -1,0 +1,139 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+// color variables
+$primary-color: #ffcb2e;
+
+// font variables
+$raleway: "Raleway", sans-serif;
+$pacifico: "Pacifico", cursive;
+
+body {
+  ul,
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  overflow-x: hidden;
+}
+
+// header starts
+header {
+  font-family: $raleway;
+  font-size: 12px;
+  padding: 8px 0;
+  font-weight: 700;
+
+  //   navbar starts
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 40px;
+  }
+
+  .navbar-light {
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      padding: 44px 0;
+      width: 45px;
+      height: 30px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,208,19, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+  }
+  //   nav bar ends
+
+  // logo starts
+  img {
+    width: 195px;
+    display: block;
+    margin: 10px auto;
+  }
+  // logo ends
+}
+
+// md starts
+@media only screen and (max-width: 991px) {
+  header {
+    .navbar-light {
+      font-size: 14px;
+    }
+    img {
+      max-width: 145px;
+    }
+  }
+}
+// md ends
+
+// below sm starts
+@media only screen and (max-width: 575px) {
+  header {
+    .col-sm-6 {
+      max-width: 50%;
+    }
+  }
+}
+// below sm ends
+
+// header ends
+
+// mains starts
+main {
+  // carousel banner starts
+  #carousel-banner {
+    margin-top: 25px;
+    .carousel-first{
+      background: url('../assets/Carousel/1-xl.jpg') no-repeat;
+      background-size: cover;
+      padding: 130px 0;
+    }
+    .carousel-second{
+      background: url('../assets/Carousel/2-xl.jpg') no-repeat;
+      background-size: cover;
+      padding: 130px 0;
+    }
+    h1 {
+      color: $primary-color;
+      font-family: $pacifico;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    p{
+      color: #fff;
+      font-size: 14px;
+      font-family: $raleway;
+      margin-bottom: 35px;
+    }
+    a{
+      color: #fff;
+      background: $primary-color;
+      text-decoration: none;
+      padding: 15px 50px;
+      font-weight: 600;
+      font-size: 12px;
+      font-family: $raleway;
+    }
+  }
+  // carousel banner ends
+
+  // fast services starts
+  #fast-services{
+    margin: 50px 0;
+    .outline{
+      border: 2px solid $primary-color;
+      padding: 25px 50px;
+    }
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+      }
+    }
+  }
+  // fast services ends
+}
+// main ends

@@ -1,0 +1,80 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  overflow-x: hidden; }
+  body ul,
+  body h1,
+  body h2,
+  body h3 {
+    margin: 0;
+    padding: 0; }
+
+header {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  padding: 8px 0;
+  font-weight: 700; }
+  header .navbar-light .navbar-nav .nav-link {
+    margin: 0 40px; }
+  header .navbar-light .navbar-toggler {
+    border: none; }
+  header .navbar-light .navbar-toggler-icon {
+    padding: 44px 0;
+    width: 45px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,208,19, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
+  header img {
+    width: 195px;
+    display: block;
+    margin: 10px auto; }
+
+@media only screen and (max-width: 991px) {
+  header .navbar-light {
+    font-size: 14px; }
+  header img {
+    max-width: 145px; } }
+@media only screen and (max-width: 575px) {
+  header .col-sm-6 {
+    max-width: 50%; } }
+main #carousel-banner {
+  margin-top: 25px; }
+  main #carousel-banner .carousel-first {
+    background: url("../assets/Carousel/1-xl.jpg") no-repeat;
+    background-size: cover;
+    padding: 130px 0; }
+  main #carousel-banner .carousel-second {
+    background: url("../assets/Carousel/2-xl.jpg") no-repeat;
+    background-size: cover;
+    padding: 130px 0; }
+  main #carousel-banner h1 {
+    color: #ffcb2e;
+    font-family: "Pacifico", cursive;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  main #carousel-banner p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 35px; }
+  main #carousel-banner a {
+    color: #fff;
+    background: #ffcb2e;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif; }
+main #fast-services {
+  margin: 50px 0; }
+  main #fast-services .outline {
+    border: 2px solid #ffcb2e;
+    padding: 25px 50px; }
+  main #fast-services ul {
+    list-style: none; }
+    main #fast-services ul li {
+      display: inline-block;
+      width: 33%;
+      text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
