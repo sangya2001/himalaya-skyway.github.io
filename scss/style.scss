@@ -1,6 +1,7 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 
 // color variables
 $primary-color: #ffcb2e;
@@ -8,8 +9,10 @@ $primary-color: #ffcb2e;
 // font variables
 $raleway: "Raleway", sans-serif;
 $pacifico: "Pacifico", cursive;
+$merienda: "Merienda One", cursive;
 
 body {
+  color: #4a4a4a;
   ul,
   h1,
   h2,
@@ -54,29 +57,6 @@ header {
   // logo ends
 }
 
-// md starts
-@media only screen and (max-width: 991px) {
-  header {
-    .navbar-light {
-      font-size: 14px;
-    }
-    img {
-      max-width: 145px;
-    }
-  }
-}
-// md ends
-
-// below sm starts
-@media only screen and (max-width: 575px) {
-  header {
-    .col-sm-6 {
-      max-width: 50%;
-    }
-  }
-}
-// below sm ends
-
 // header ends
 
 // mains starts
@@ -84,13 +64,13 @@ main {
   // carousel banner starts
   #carousel-banner {
     margin-top: 25px;
-    .carousel-first{
-      background: url('../assets/Carousel/1-xl.jpg') no-repeat;
+    .carousel-first {
+      background: url("../assets/Carousel/1-xl.jpg") no-repeat;
       background-size: cover;
       padding: 130px 0;
     }
-    .carousel-second{
-      background: url('../assets/Carousel/2-xl.jpg') no-repeat;
+    .carousel-second {
+      background: url("../assets/Carousel/2-xl.jpg") no-repeat;
       background-size: cover;
       padding: 130px 0;
     }
@@ -100,13 +80,13 @@ main {
       font-size: 24px;
       margin-bottom: 30px;
     }
-    p{
+    p {
       color: #fff;
       font-size: 14px;
       font-family: $raleway;
       margin-bottom: 35px;
     }
-    a{
+    a {
       color: #fff;
       background: $primary-color;
       text-decoration: none;
@@ -119,21 +99,279 @@ main {
   // carousel banner ends
 
   // fast services starts
-  #fast-services{
+  #fast-services {
     margin: 50px 0;
-    .outline{
+    .outline {
       border: 2px solid $primary-color;
       padding: 25px 50px;
     }
-    ul{
+    ul {
       list-style: none;
-      li{
+      li {
         display: inline-block;
         width: 33%;
         text-align: center;
+        font-family: $raleway;
+        font-size: 13px;
+        font-weight: 500;
+        i {
+          color: $primary-color;
+        }
       }
     }
   }
   // fast services ends
+
+  // short info starts
+  #short-info {
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-family: $merienda;
+      font-size: 18px;
+      margin: 50px 0 30px 0;
+      // font-weight: 900;
+      line-height: 1.4;
+      .highlight {
+        color: $primary-color;
+      }
+    }
+    p {
+      font-family: $raleway;
+      font-size: 14px;
+      margin-bottom: 45px;
+    }
+    a {
+      color: #fff;
+      background: $primary-color;
+      text-decoration: none;
+      padding: 15px 50px;
+      font-weight: 600;
+      font-size: 12px;
+      font-family: $raleway;
+    }
+  }
+  // short info ends
+
+  // short ad starts
+  #short-ad {
+    .container {
+      background: url("../assets/short-adad.jpg") no-repeat;
+      background-size: cover;
+      padding: 40px 0;
+    }
+    text-align: center;
+    color: #fff;
+    margin: 50px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    // font-weight: 600;
+    font-family: $merienda;
+  }
+  // short ad ends
+  // our products starts
+  #our-products {
+    h1 {
+      font-family: $merienda;
+      position: relative;
+      font-size: 18px;
+      text-align: center;
+      .circle {
+        position: absolute;
+        padding: 3.5px;
+        background: $primary-color;
+        border-radius: 50%;
+        top: 7px;
+      }
+      .line {
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background: $primary-color;
+        top: 9px;
+      }
+      .icon-left {
+        .circle {
+          left: 42%;
+        }
+        .line {
+          left: 38%;
+        }
+      }
+      .icon-right {
+        .circle {
+          right: 42%;
+        }
+        .line {
+          right: 38%;
+        }
+      }
+    }
+  }
+  // our products ends
 }
 // main ends
+
+@media only screen and (max-width: 1199px){
+  main{
+    #our-products{
+      h1{
+        .icon-left{
+          .line{
+            left: 35%;
+          }
+          .circle{
+            left: 40%;
+          }
+        }
+        .icon-right{
+          .line{
+            right: 35%;
+          }
+          .circle{
+            right: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+// md starts
+@media only screen and (max-width: 991px) {
+  // header starts
+  header {
+    .navbar-light {
+      font-size: 14px;
+    }
+    img {
+      max-width: 145px;
+    }
+  }
+  // header ends
+
+  // main starts
+  main {
+    // fast services starts
+    #fast-services {
+      ul li {
+        width: 30%;
+      }
+    }
+    //fast services ends
+
+    // ourprocusts starts
+    #our-products{
+      h1{
+        .icon-left{
+          .line{
+            left: 30%;
+          }
+          .circle{
+            left: 37%;
+          }
+        }
+        .icon-right{
+          .line{
+            right: 30%;
+          }
+          .circle{
+            right: 37%;
+          }
+        }
+      }
+    }
+    // our products ends
+  }
+  // main ends
+}
+// md ends
+
+@media only screen and (max-width: 767px) {
+  // main starts
+  main {
+    // fast services starts
+    #fast-services {
+      ul li {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    //fast services ends
+
+    // ourprocusts starts
+    #our-products{
+      h1{
+        .icon-left{
+          .line{
+            left: 24%;
+          }
+          .circle{
+            left: 33%;
+          }
+        }
+        .icon-right{
+          .line{
+            right: 24%;
+          }
+          .circle{
+            right: 33%;
+          }
+        }
+      }
+    }
+    // our products ends
+  }
+  // main ends
+}
+
+// below sm starts
+@media only screen and (max-width: 575px) {
+  // header starts
+  header {
+    .col-sm-6 {
+      max-width: 50%;
+    }
+  }
+  // header ends
+
+  // main starts
+  main {
+    // fast services starts
+    #fast-services {
+      padding: 0 35px;
+    }
+    //fast services ends
+  }
+  // main ends
+}
+// below sm ends
+
+@media only screen and (max-width: 414px){
+   // main starts
+   main {
+    // ourprocusts starts
+    #our-products{
+      h1{
+        .icon-left{
+          .line{
+            left: 9%;
+          }
+          .circle{
+            left: 22%;
+          }
+        }
+        .icon-right{
+          .line{
+            right: 9%;
+          }
+          .circle{
+            right: 22%;
+          }
+        }
+      }
+    }
+    // our products ends
+  }
+  // main ends
+}
