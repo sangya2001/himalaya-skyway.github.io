@@ -8,25 +8,10 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <!-- Bootstrap CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- fontawesome css -->
-    <link href="./fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-
-    <!-- main js -->
-    <script defer src="./js/script.js"></script>
+    <link href="./fontawesome/css/all.min.css" rel="stylesheet">
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -62,7 +47,7 @@
                 <!-- logo starts -->
                 <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
                     <a href="">
-                        <img src="./assets/logo.png" alt="Himalaya Skyway Logo" />
+                        <img loading="lazy" src="./assets/logo.png" alt="Himalaya Skyway Logo" />
                     </a>
                 </div>
                 <!-- logo ends -->
@@ -137,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <img src="./assets/short-info.jpg" alt="Honey Comb">
+                        <img src="./assets/short-info.jpg" loading="lazy" alt="Honey Comb">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <h1>
@@ -192,8 +177,8 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="shadow-sm mb-5 bg-white rounded">
                             <div class="product-bg  text-right p-4 rounded">
-                                <button onclick="changeColor(1)"><i class="fas fa-heart" id="heart1"></i></button>
-                                <img src="./assets/Products/product-honey-100g.png" class="card-img-top"
+                                <button aria-label="Heart Icon" onclick="changeColor(1)"><i class="fas fa-heart" id="heart1"></i></button>
+                                <img src="./assets/Products/product-honey-100g.png" loading="lazy" class="card-img-top"
                                     alt="Himalaya skyway honey-100g">
                             </div>
                             <div class="card-body">
@@ -211,8 +196,8 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="shadow-sm mb-5 bg-white rounded">
                             <div class="product-bg  text-right p-4 rounded">
-                                <button onclick="changeColor(2)"><i class="fas fa-heart" id="heart2"></i></button>
-                                <img src="./assets/Products/product-honey-150g.png" class="card-img-top"
+                                <button aria-label="Heart Icon" onclick="changeColor(2)"><i class="fas fa-heart" id="heart2"></i></button>
+                                <img src="./assets/Products/product-honey-150g.png" loading="lazy" class="card-img-top"
                                     alt="Himalaya skyway honey-100g">
                             </div>
                             <div class="card-body">
@@ -229,8 +214,8 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="shadow-sm mb-5 bg-white rounded">
                             <div class="product-bg  text-right p-4 rounded">
-                                <button onclick="changeColor(3)"><i class="fas fa-heart" id="heart3"></i></button>
-                                <img src="./assets/Products/product-honey-150g.png" class="card-img-top"
+                                <button aria-label="Heart Icon" onclick="changeColor(3)"><i class="fas fa-heart" id="heart3"></i></button>
+                                <img loading="lazy" src="./assets/Products/product-honey-150g.png" class="card-img-top"
                                     alt="Himalaya skyway honey-100g">
                             </div>
                             <div class="card-body">
@@ -247,8 +232,8 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="shadow-sm mb-5 bg-white rounded">
                             <div class="product-bg  text-right p-4 rounded">
-                                <button onclick="changeColor(4)"><i class="fas fa-heart" id="heart4"></i></button>
-                                <img src="./assets/Products/product-honey-200g.png" class="card-img-top"
+                                <button aria-label="Heart Icon" onclick="changeColor(4)"><i class="fas fa-heart" id="heart4"></i></button>
+                                <img loading="lazy" src="./assets/Products/product-honey-200g.png" class="card-img-top"
                                     alt="Himalaya skyway honey-100g">
                             </div>
                             <div class="card-body">
@@ -274,6 +259,14 @@
 
     </footer>
     <!-- foote ends -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="./js/jquery-3.5.1.slim.min.js" async></script>
+    <script src="./js/popper.min.js" async></script>
+    <script src="./js/bootstrap.min.js" async></script>
+
+    <!-- main js -->
+    <script src="./js/script.min.js" async></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   color: #4a4a4a;
   overflow-x: hidden; }
@@ -69,7 +70,7 @@ main #fast-services {
     list-style: none; }
     main #fast-services ul li {
       display: inline-block;
-      width: 33%;
+      width: 32%;
       text-align: center;
       font-family: "Raleway", sans-serif;
       font-size: 13px;
@@ -157,7 +158,7 @@ main #our-products .product-price {
 main #our-products .card-body {
   padding: 25px 30px 35px 30px; }
   main #our-products .card-body a {
-    padding: 10px 31%;
+    padding: 10px 24%;
     background: #ffcb2e;
     color: #fff; }
 main #our-products .explore-product {
@@ -233,6 +234,9 @@ main #our-products .explore-product:hover {
     height: 250px; }
   main #our-products .card-body a {
     padding: 10px 41%; } }
+@media only screen and (max-width: 500px) {
+  main #our-products .card-body a {
+    padding: 10px 37%; } }
 @media only screen and (max-width: 425px) {
   main #our-products h1 .icon-left .line {
     left: 9%; }
@@ -245,11 +249,11 @@ main #our-products .explore-product:hover {
   main #our-products .product-price {
     margin-left: 150px; }
   main #our-products .card-body a {
-    padding: 10px 37%; } }
-@media only screen and (max-width: 360px) {
+    padding: 10px 34%; } }
+@media only screen and (max-width: 375px) {
   main #our-products .product-price {
     margin-left: 150px; }
   main #our-products .card-body a {
-    padding: 10px 33%; } }
+    padding: 10px 31%; } }
 
 /*# sourceMappingURL=style.css.map */

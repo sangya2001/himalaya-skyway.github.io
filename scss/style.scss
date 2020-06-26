@@ -111,7 +111,7 @@ main {
       list-style: none;
       li {
         display: inline-block;
-        width: 33%;
+        width: 32%;
         text-align: center;
         font-family: $raleway;
         font-size: 13px;
@@ -239,7 +239,7 @@ main {
     .card-body{
       padding: 25px 30px 35px 30px;
       a{
-        padding: 10px 31%;
+        padding: 10px 24%;
         background: $primary-color;
         color: #fff;
       }
@@ -433,6 +433,24 @@ main {
 }
 // below sm ends
 
+// below sm starts
+@media only screen and (max-width: 500px) {
+  // main starts
+  main {
+    // ourprocusts starts
+    #our-products{
+      .card-body{
+        a{
+          padding: 10px 37%;
+        }
+      }
+    }
+    // our products ends
+  }
+  // main ends
+}
+// below sm ends
+
 @media only screen and (max-width: 425px){
    // main starts
    main {
@@ -461,7 +479,7 @@ main {
       }
       .card-body{
         a{
-          padding: 10px 37%;
+          padding: 10px 34%;
         }
       }
     }
@@ -470,7 +488,7 @@ main {
   // main ends
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 375px){
   // main starts
   main {
     // ourprocusts starts
@@ -480,7 +498,7 @@ main {
       }
       .card-body{
         a{
-          padding: 10px 33%;
+          padding: 10px 31%;
         }
       }
     }
